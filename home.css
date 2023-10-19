@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  .navbar-logo{
+    color: #667292;
+    margin-left: 20px;
+  }
+
+  .navbar-list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-list ul li{
+    margin: 0 10px;
+  }
+
+  .navbar-list ul li a{
+    display: block;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #667292;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
+  .navbar-list ul li a:hover{
+    color: #000;
+    background-color: #fff;
+  }
+
+  .sinopsis{
+    position: absolute;
+    z-index: 1;
+    border: 1px black solid;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #A6E3E9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #000;
+  }
+
+
+  main table{
+    border: 1px black solid;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  main table tbody tr td{
+    border: 2px #315B96 solid;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+
+.navbar{
+    background-color:#93B5C6;
+    justify-content: space-between;
+    display: flex;
+    padding: 25px 5%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+ .navbar ul{
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.navbar ul li{
+    float: left;
+}
+
+.navbar ul li a{
+    color:white;
+    padding-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    
+}
+.navbar ul li a:hover{
+    text-align: center;
+    background-color: #628395;
+    padding: 8px;
+    border-radius: 10px;
+}
+.menu {
+    display: block;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #628395;
+    border-radius: 3px;
+    position: relative;
+}
+
+#menu{
+    display: none;
+}
+
+.header{
+    background-color: #628395;
+    color: white;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    padding: 40px;
+    margin-top: 75px;
+}
+
+
+/* Media Query */
+
+@media (max-width: 768px){
+    .navbar ul{
+        list-style-type: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: #C9CCD5;
+        transition: 0.4s;
+    } 
+    
+    .navbar ul.active{
+        right: 0;
+    }
+
+    .navbar ul li {
+        clear: left;
+        display: block;
+        margin: 24px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #menu{
+        display: block;
+    }
+
+
+    #menu:hover{
+        background-color: #CDF0EA;
+        cursor: pointer;
+    }
+}
+

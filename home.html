@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>
+        PROJECT UTS
+    </title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body style="background-color: #E6F8F9;">
+    <div class="navbar">
+      <h2>UTS WEB</h2>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Profil.html">PROFIL</a></li>
+        <li><a href="Layout.html">LAYOUT</a></li>
+        <li><a href="Dom.html">DOM</a></li>
+      </ul>
+      <img src="barlist.jpg" id="menu">
+    </div>
+
+    <div class="header">LIST FILM</div>
+  
+</header>
+<main>
+    <table>
+        <tbody>
+            <tr>
+                <td id="BudiPekerti">Budi Pekerti</td>
+            </tr>
+            <tr>
+                <td id="TheExorcistBeliever">The Exorcist: Believer</td>
+            </tr>
+            <tr>
+                <td id="DiAmbangKematian">Di Ambang Kematian</td>
+            </tr>
+            <tr>
+                <td id="SawX">Saw X</td>
+            </tr>
+            <tr>
+                <td id="Sijjin">Sijjin</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="sinopsis" id="BudiPekerti">
+        Sinopsis Budi Pekerti: Bu Prani (Ine Febriyanti), seorang guru BK yang video perselisihannya dengan penguniung pasar meniadi viral di media sosial. 
+        Akibat tindakannya yang dinilai tidak mencerminkan pribadi seorang guru, ia dan keluarganya Muklas (Angga Yunanda), Tita (Prilly Latuconsina), 
+        dan Pak Didit (Dwi Sasono) mendapat perundungan, dicari-cari kesalahan lainnya hingga terancam kehilangan pekerjaan.
+    </div>
+    <div class="sinopsis" id="TheExorcistBeliever">
+        Sinopsis The Exorcist Believer: Sejak kematian istrinya 12 tahun lalu, Victor Fielding (Leslie Odom Jr.) membesarkan anaknya, Angela (Lidya Jewett) sendirian. 
+        Tragedi dimulai saat Angela dan temannya Katherine (Olivia O'Neill) hilang 3 hari di hutan. Pasca kejadian ini keduanya dirasuki oleh entitas setan misterius. 
+        Victor berusaha menyelamatkan anaknya dengan mencari seseorang yang mengetahui akar masalah yang terjadi. Sosok Chris MacNeil (Ellen Burstyn) diyakini bisa menyelesaikannya. 
+        Siapakah Chris MacNeil dan bagaimana nasib kedua anak perempuan yang dirasuki?
+        </div>
+    <div class="sinopsis" id="DiAmbangKematian">
+        Sinopsis Di Ambang Kematian: Paska kematian ibunya yang tragis, Nadia (Taskya Namya) mengetahui bahwa ayahnya (Rifnu Wikana) terlanjur melakukan pesugihan yang menuntut nyawa manusia. 
+        Demi mencegah kematian berikutnya, Nadia, kakaknya Yoga (Wafda) dan sang ayah menempuh ritual-ritual khusus. Namun, Iblis di balik pesugihan itu tetap terus mengintai. Membuat Nadia dan 
+        keluarganya hidup bagai di ambang kematian.
+    </div>
+    <div class="sinopsis" id="SawX">
+        Sinopsis Saw X: Mengejar sebuah pengobatan yang menjanjikan dapat menyembuhkan kankernya, John Kramer (Tobin Bell) menuju ke Meksiko untuk menjalani perawatan eksperimental, 
+        hanya untuk mengetahui bahwa dia menjadi mangsa dari sebuah penipuan. Kini, para scammer menjadi mangsa di permainan baru milik Jigsaw.
+    </div>
+    <div class="sinopsis" id="Sijjin">
+        Sinopsis Sijjin : Irma (Anggika Bolsterli) jatuh cinta pada Galang (Ibrahim Risyad), sepupunya yang sudah beristri dan punya anak. 
+        Namun Irma masih terobsesi dan ingin menjadi perempuan satu-satunya di hidup Galang. Irma datang ke dukun untuk mengirim santet pada istri Galang. 
+        Sejak saat itu teror dimulai. Gangguan mistis, kesurupan, dan kematian terjadi di rumah Galang. Namun, yang tak diduga Irma, ancaman itu juga mengincar nyawanya sendiri.
+    </div>
+</main>
+
+            <script>
+                const menu = document.querySelector('#menu')
+                const active = document.querySelector('.navbar ul')
+    
+                menu.onclick = function () {
+                    active.classList.toggle('active')
+                }
+    
+            </script>
+    
+</body>
+</html>
+<script src="home.js"></script>
